@@ -20,8 +20,10 @@ Two types of people will be using DBtify: Listeners and artists. You do not have
 implement an authentication mechanism. You are allowed to provide two options for
 being a listener or an artist. The person can choose what he/she is and cannot perform
 other type of person’s operations.
+
 ## 2 Requirements
 Your UI must support the following operations:
+
 • Artists shall be able to add/update/delete albums.
 
 • Artists shall be able to add/update/delete songs in the albums.
