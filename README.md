@@ -1,14 +1,19 @@
-# dbtify
-## 1 Project Description
-In this project, you are supposed to implement a simple song management platform,
-called DBtify, with a web-based user interface. There will be listeners, songs, albums,
-and artists in the platform. These entities will have the following properties:
+<img align="right" src="https://user-images.githubusercontent.com/32341138/87282744-3d27a600-c4fd-11ea-8a98-449f22a9b9d7.png">
+
+# DBtify
+
+This is the third project of Cmpe321 Introduction to Database Systems. For the other projects of this course, you can visit [Cmpe321](https://github.com/afra-akbas/cmpe321) repository.
+
+## Project Description
+In this project, I implemented a simple song management platform,
+called DBtify, with a web-based user interface. There are listeners, songs, albums,
+and artists in the platform. These entities have the following properties:
 
 • Listener: Username and e-mail. They are both unique which means there exists
 only one listener with a specific username and e-mail address.
 
 • Artist: Name and surname. They are not necessarily unique independently but
-you can assume there exists only one artist with a name and surname couple.
+we can assume there exists only one artist with a name and surname couple.
 
 • Album: ID, genre, and title. By definition, each ID is unique. Each album must
 contain at least one song.
@@ -16,13 +21,13 @@ contain at least one song.
 • Song: ID and title. By definition, each ID is unique. Each song must reside in
 only one album. Each song may be produced by one or multiple artists.
 
-Two types of people will be using DBtify: Listeners and artists. You do not have to
-implement an authentication mechanism. You are allowed to provide two options for
+Two types of people are using DBtify: Listeners and artists. Since we do not have to, I did not
+implement an authentication mechanism. I am allowed to provide two options for
 being a listener or an artist. The person can choose what he/she is and cannot perform
 other type of person’s operations.
 
-## 2 Requirements
-Your UI must support the following operations:
+## Requirements
+My UI must support the following operations:
 
 • Artists shall be able to add/update/delete albums.
 
@@ -58,3 +63,17 @@ artist’s name and surname.
 2. When a song is deleted, it must be removed from listeners’ likes.
 3. When a listener likes an album, all the songs of this album must also be liked
 by that listener.
+
+## For Installation
+WE NEED TO RUN 'npm i' in order to install nodejs packages.
+
+     npm i
+
+#### BACKEND: 
+THEN TO RUN BACKEND 'node app.js' 
+
+     node app.js
+
+#### FRONTEND:
+MY FRONTEND CODE IN 'client/' path. Build file is in 'client/build'. When we run the backend, build file servers as a static file. I develop with React js. 
+
